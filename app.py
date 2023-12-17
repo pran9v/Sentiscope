@@ -22,10 +22,7 @@ def process_emotion():
         
         output, error = process.communicate(input=input_data)
         match = re.search(r'\b(\w+)$', output)
-        # Debug statements
         emotion = match.group(1)
-        print("Output from script.py(app.py):", emotion)
-        print("Error from script.py(app.py):", error)
 
         # return the plain string output from script.py
         return emotion

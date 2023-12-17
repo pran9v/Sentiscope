@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Sentiscope",
+    "version": "1.0",
+    "description": "Analyze the selected text for the probable emotions",
+    "icons": {
+        "48": "cat.png"
+    },
+    "permissions": [
+        "activeTab",
+        "activeTab",
+        "storage"
+    ],
+    "action": {
+        "default_icon": "cat.png",
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ]
+}

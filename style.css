@@ -1,0 +1,90 @@
+
+:root {
+    --gradient: linear-gradient(
+        315deg,
+        #0c0c0c 0,
+        #ca7968 74%
+
+    );
+}
+                                     
+
+
+
+body {
+    margin: 0;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    color: white;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    background: #ca7968;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: bg-animation 15s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+
+
+.heading {
+    position: relative;
+    top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: 100%;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: 900;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-shadow: 2px 3px 0px #898999;
+    text-emphasis-color: white;
+    font-size: 25px;
+}  
+
+.heading2 {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.result {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.buttondiv {
+    position: center;
+    text-align: center;
+}
+
+.buttondiv button {
+    position: relative;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
+    background-color: rgb(226, 140, 108);
+
+}
+
+.buttondiv button:hover {
+    background-color: #000000;
+    color: white;
+}
